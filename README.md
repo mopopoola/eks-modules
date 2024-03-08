@@ -5,9 +5,9 @@
 
 ~~~ 
 
-module "eks-module" {
-  source         = "github.com/mopopoola/eks-modules.git"
-  region         = "Enter your Providers region here"
+module "modules" {
+  source  = "app.terraform.io/Popoola-IT/modules/AWS"
+  version = "1.0.1" 
   vpc_cidr       = "10.0.0.0/16"
   dns_hostnames  = true
   dns_support    = true
